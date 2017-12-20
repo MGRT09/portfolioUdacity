@@ -1,108 +1,93 @@
-<!---Resume site submission for Udacity Course--->
-
+<!---Resume site submission for Udacity Course=-->
 <!DOCTYPE html>
- 
 <html>
-    <head>
-    <meta charset='utf-8'>  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='style.css'/>  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-    <title>Resume Udacity</title>
-    </head>
+<head>
+	<meta charset='utf-8'>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href='css/style.css' rel='stylesheet'>
+	<title>Resume Udacity</title>
+</head>
 <body>
-<!---
+	<!---
 Navigation Bar - collapses at small size
---->
-<nav class="navbar navbar-expand-sm navbar-dark bg-info">
-  <a class="navbar-brand" href="#">Nav</a>
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <!-- Navbar links -->
-  <div class="navbar-collapse collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#description">Description</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#featuredWork">Featured Work</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li> 
-    </ul>
-  </div> 
-</nav> 
-<!--- 
+=-->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-info">
+		<a class="navbar-brand" href="#">Nav</a> <!-- Toggler/collapsibe Button -->
+		 <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> <!-- Navbar links -->
+		<div class="navbar-collapse collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#description">Description</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#featuredWork">Featured Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav><!--- 
 Bootstrap used for grid layout
---->
-<div class="jumbotron jumbotron-fluid text-center" id="mainTitle">
-  <h1>Udacity Resume Page</h1>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="graphicLogo.png" class ="rounded" alt="Sample photo">
-    </div>
-    <div class="col-sm-8">
-      <h3 id="description">Jane Doette</h3>
-      <p>Front End Ninja</p>
-      <p>I am a front end web developer, please take a look at some of my work below</p>
-      <p>The Sunflower app is <kbd>NEW!</kbd></p>
-    </div>
-  </div>
-</div>
-<hr class="lineBreak">
-<div class="container" id="centreRow">
-    <h2 id="featuredWork">Featured Work</h2>
-  <div class="row">
-    <div class="col-sm-4">
-      <article class="card">
-        <img src="graphicApp.png"  alt="Sample photo">
-        <div class="text">
-          <h3>APPIFY</h3>
-          <button onclick="https://github.com/udacity/Appify">Review</button>
-        </div>
-        </article>
-    </div>
-    <div class="col-sm-4">
-      <article class="card">
-        <img src="graphicFlower.png" alt="Sample photo">
-        <div class="text">
-          <h3>SUNFLOWER</h3>
-          <button onclick="https://github.com/udacity/Sunflower">Review</button>
-        </div>
-      </article> 
-    </div>
-    <div class="col-sm-4">
-      <article class="card">
-        <img src="graphicStars.png" alt="Sample photo">
-        <div class="text">
-          <h3>BOKEH</h3>
-          <button onclick="https://github.com/udacity/Bokeh">Review</button>
-        </div>
-      </article>
-    </div>
-  </div>
-</div>
-<hr class="lineBreak">
-    <div class="container">
-  <div class="row">
-    <div class="col-sm-8">
-      <h3>Avalibility</h3>
-      <p>I am currently avaliable for part time development</p>
-      <p>Feel free to contact me to discuss any projects</p>
-    </div>
-    <div class="col-sm-2">
-      <h3 id="contact">Contact Info</h3>
-      <p>Address.... Some place somewhere with some postcode</p>
-    </div>
-  </div>
-</div> 
+=-->
+	<div class="jumbotron jumbotron-fluid text-center" id="mainTitle">
+		<h1>Udacity Resume Page</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4"><img alt="Sample photo" class="rounded" src="img/graphicLogo.png"></div>
+			<div class="col-sm-8">
+				<h3 id="description">Jane Doette</h3>
+				<p>Front End Ninja</p>
+				<p>I am a front end web developer, please take a look at some of my work below</p>
+				<p>The Sunflower app is <kbd>NEW!</kbd></p>
+			</div>
+		</div>
+	</div>
+	<hr class="lineBreak">
+	<div class="container" id="centreRow">
+		<h2 id="featuredWork">Featured Work</h2>
+		<div class="row">
+			<div class="card w-25">
+				<img alt="Card image cap" class="card-img-top" src="img/graphicApp.png">
+				<div class="card-block">
+					<h4 class="card-title">APPIFY</h4><input class="button" onclick="location.href='http://www.google.com';" type="button" value="Review">
+				</div>
+			</div>
+			<div class="card w-25">
+				<img alt="Card image cap" class="card-img-top" src="img/graphicFlower.png">
+				<div class="card-block">
+					<h4 class="card-title">SUNFLOWER</h4><input class="button" onclick="location.href='http://www.google.com';" type="button" value="Review">
+				</div>
+			</div>
+			<div class="card w-25">
+				<img alt="Card image cap" class="card-img-top" src="img/graphicStars.png">
+				<div class="card-block">
+					<h4 class="card-title">BOKEH</h4><input class="button" onclick="location.href='http://www.google.com';" type="button" value="Review">
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="lineBreak">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<h3>Avalibility</h3>
+				<p>I am currently avaliable for part time development</p>
+				<p>Feel free to contact me to discuss any projects</p>
+			</div>
+			<div class="col-sm-2">
+				<h3 id="contact">Contact Info</h3>
+				<p>Address.... Some place somewhere with some postcode</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
+	</script>
 </body>
 </html>
